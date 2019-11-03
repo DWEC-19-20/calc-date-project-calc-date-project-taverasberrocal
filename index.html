@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+    <style>
+        body{
+            background-color: darkseagreen;
+        }
+
+
+    </style>
+<html>
+
+<body>
+    <h1>&nbsp;&nbsp;&nbsp;CONVERSIONES FECHAS</h1>
+    
+    <div class="botones">
+        <button type="button" onclick="calcDate('startdate','days')"  >Calcular fecha sumando<br>o restando número de días naturales</button>
+        <button type="button" onclick="getDays('startdate','endDate')" >Calcular número de días<br> naturales entre dos fechas</button>
+        <button type="button" onclick="calcWorkingDate('startdate','days')"  >Calcular fecha según un número<br> de días contando días hábiles</button>
+        <button type="button" onclick="getWorkingDays('startdate','endDate')" >Calcular número de días<br>entre dos fechas contando días hábiles</button>
+    </div>
+    
+    <div id="obj1" style="display: none">
+    <table>
+
+        <tr>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Función que suma o resta un número de dias naturales según el valor de operation</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>Introduce fecha:
+            <input type="date" id="campoFecha">
+            </td>
+        </tr>
+        <tr>
+            <td>Introduce los dias naturales que quieres sumar o restar:<input type="text" id="campoDias1" size="10s"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="Convertir" value="Convertir"></td>
+        </tr>
+
+        <tr>
+            <td>Resultado de la conversión:
+            <p id="campoResultado1"></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="obj2" style="display: none">
+        <table>
+                <tr>
+                    <td>
+                        <h4>Función que devuelve el número de días naturales entre dos fechas</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>FECHA 1:</td>
+                </tr>
+                <tr>
+                    <td>Introduce la fecha:<input type="date" id="campoFecha1"></td>
+            
+                </tr>
+
+                <tr>
+                    <td>FECHA 2:</td>
+                </tr>
+                <tr>
+                    <td>Introduce la fecha:<input type="date" id="campoFecha2"></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="button" id="calcularNaturales" value="Calcular días naturales entre ambas fechas"></td>
+                </tr>
+
+                <tr>
+                    <td>Dias naturales entre ambas fechas:<p id="campoDiferenciaDias"></p>
+                    </td>
+                </tr>
+            </table>
+
+</div>
+<div id="obj3" style="display: none">
+        <table>
+              
+                <tr>
+                    <td><h4>Función que suma o resta un número de dias hábiles según el valor de operación</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        Fecha origen:
+                        <input type="date" id="campoFechaOrigen">
+                    </td>            
+                </tr>
+
+                    <td>
+                        Introduce días a sumar o restar:
+                        <input type="text" id="campoDias2" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="calcularHabiles" value="Calcular"></td>
+                </tr>
+                <tr>
+                    <td>Resultado:
+                    <p id="campoResultado2"></p>
+                    </td>
+                </tr>
+                
+        
+            </table>
+            
+</div>
+<div id="obj4" style="display: none">
+        <table>
+                <tr>
+                    <td><h4>Función que recibe dos fechas de tipo Date y devuelva el número de días hábiles que hay entre las dos fechas</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        Fecha 1:
+                        <input type="date" id="campoFechaHabil1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fecha 2:
+                        <input type="date" id="campoFechaHabil2">
+                    </td>
+                </tr>
+ 
+                <tr>
+                    <td><input type="button" id="calcularHabilesFechas" value="Calcular días habiles entre ambas fechas"></td>
+                </tr>
+
+                <tr>
+                    <td>Resultado:
+                    <p id="campoResultado3"></p>
+                    </td>
+                </tr>
+            </table>
+
+</div>
+    <script src="js/dateCalc.js"></script>
+    <script src="js/interface.js"></script>
+</body></html>
