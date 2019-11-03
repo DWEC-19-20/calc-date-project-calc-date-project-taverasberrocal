@@ -6,6 +6,10 @@
 
 
 function calcDate(startdate, days) {
+    document.getElementById('obj1').style.display = 'block';
+    document.getElementById('obj2').style.display = 'none';
+    document.getElementById('obj3').style.display = 'none';
+    document.getElementById('obj4').style.display = 'none';
     var resultado = new Date(startdate);
     
     
@@ -21,7 +25,10 @@ function calcDate(startdate, days) {
 */
 
 function getDays(startdate, endDate) {
-
+    document.getElementById('obj2').style.display = 'block';
+    document.getElementById('obj1').style.display = 'none';
+    document.getElementById('obj3').style.display = 'none';
+    document.getElementById('obj4').style.display = 'none';
     var resultado1 = new Date(startdate);
     var resultado2 = new Date(endDate);
 
@@ -39,7 +46,10 @@ function getDays(startdate, endDate) {
 */
 
 function calcWorkingDate(startdate, days) {
-
+    document.getElementById('obj3').style.display = 'block';
+    document.getElementById('obj1').style.display = 'none';
+    document.getElementById('obj4').style.display = 'none';
+    document.getElementById('obj2').style.display = 'none';
    
     var fechaFinal = new Date(startdate);
     var fecha = new Date(startdate);
@@ -108,7 +118,10 @@ function calcWorkingDate(startdate, days) {
 */
 
 function getWorkingDays(startdate, endDate) {
-
+    document.getElementById('obj4').style.display = 'block';
+    document.getElementById('obj3').style.display = 'none';
+    document.getElementById('obj2').style.display = 'none';
+    document.getElementById('obj1').style.display = 'none';
 
     var resultado1 = new Date(startdate);
     var resultado2 = new Date(endDate);
